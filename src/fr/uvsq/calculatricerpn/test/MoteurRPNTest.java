@@ -38,8 +38,7 @@ public class MoteurRPNTest {
 	@Test
 	public void testEnregistrerOperande() throws BorneSupInfException{
 		m.enregistreOperande(2.0);
-		boolean test=(m.getPile().pop()==2.0);
-		assertEquals(test,true);
+		assertEquals(m.getPile().pop()==2.0,true);
 	}
 	
 	//Test si on peut ajouter un élément supérieur au max	 
@@ -59,8 +58,7 @@ public class MoteurRPNTest {
 	public void testCalculerOperationPlus() throws BorneSupInfException, DivisionParZeroException{
 		m.enregistreOperande(2.0);
 		m.enregistreOperande(3.0);
-		boolean test=(m.calculeOperation(Operation.PLUS)==5.0);
-		assertEquals(test,true);
+		assertEquals(m.calculeOperation(Operation.PLUS)==5.0,true);
 	}
 
 	// Test si l'opération MOINS fonctionne
@@ -77,8 +75,7 @@ public class MoteurRPNTest {
 	public void testCalculerOperationMult() throws BorneSupInfException, DivisionParZeroException{
 		m.enregistreOperande(3.0);
 		m.enregistreOperande(2.0);
-		boolean test=(m.calculeOperation(Operation.MULT)==6.0);
-		assertEquals(test,true);
+		assertEquals(m.calculeOperation(Operation.MULT)==6.0,true);
 	}
 	
 	//Teste si l'opération DIV fonctionne
