@@ -19,33 +19,29 @@ public class OperationTest {
 	//Test de la constante Plus de la classe Operation
 	@Test
 	public void testPlus() throws DivisionParZeroException {
-		op= Operation.PLUS;
-		boolean test=(op.eval(2,3)==5.0);
-		assertEquals(test,true);
+		op = Operation.PLUS;
+		assertEquals(op.eval(2,3)==5.0,true);
 	}
 	
 	//Test de la constante Moins de la classe Operation
 	@Test
 	public void testMoins() throws DivisionParZeroException {
 		op= Operation.MOINS;
-		boolean test=(op.eval(2,3)==2.0);
-		assertEquals(test,true);
+		assertEquals(op.eval(2,3)==1.0,true);
 	}
 	
 	//Test de la constante Mult de la classe Operation
 	@Test
 	public void testMult() throws DivisionParZeroException {
 		op= Operation.MULT;
-		boolean test=(op.eval(2,3)==6.0);
-		assertEquals(test,true);
+		assertEquals(op.eval(2,3)==6.0,true);
 	}
 	
 	//Test de la constante Div de la classe Operation
 	@Test
 	public void testDiv() throws DivisionParZeroException {
 		op= Operation.DIV;
-		boolean test=(op.eval(2,3)==1.5);
-		assertEquals(test,true);
+		assertEquals(op.eval(2,3)==1.5,true);
 	}
 	
 	//Ce test effectue l'operation de division par 0 et doit retourner une exception
