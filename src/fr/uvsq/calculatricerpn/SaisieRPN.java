@@ -79,10 +79,7 @@ public class SaisieRPN {
 		return this.moteur;
 	}
 
-	//Méthode qui permet d'afficher les opérandes qui sont stockés dans la pile 
-	public void afficheValues(){
-		System.out.println(moteur.listeOperandes());
-	}		
+	
 	
 	
 	

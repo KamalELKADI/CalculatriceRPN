@@ -14,7 +14,6 @@ public enum CalculatriceRPN {
 
 		try {
 			SaisieRPN saisie = new SaisieRPN();
-			saisie.afficheValues();
 			saisie.saisie();
 		}
 		
