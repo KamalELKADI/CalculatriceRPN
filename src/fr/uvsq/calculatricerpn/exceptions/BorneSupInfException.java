@@ -9,7 +9,7 @@ public class BorneSupInfException extends Exception{
      * Initialise une instance de <code>BorneSupInfException</code>.
      */
 	public BorneSupInfException() {
-		super("Opérande non située entre les bornes de la calculatrice :");
+		super("<------!!!! Opérande non située entre les bornes de la calculatrice :");
 	}
 	
 }

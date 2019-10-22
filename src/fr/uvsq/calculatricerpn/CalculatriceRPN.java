@@ -27,7 +27,7 @@ public enum CalculatriceRPN {
 		catch(BorneSupInfException e) {
 			SaisieRPN LimiteBorne=new SaisieRPN();
 			//affiche le msg d'erreur Opérande non située entre les bornes de la calculatrice : MIN_VALUE = -10000.0 et MAX_VALUE = 10000.0.
-			System.out.println(e.getMessage() + LimiteBorne.getMoteur().specifieMinMaxValue());
+			System.out.println(e.getMessage() + LimiteBorne.getMoteur().specifieMinMaxValue() + "!!!!----->");
 		}
 		
 		// Exception correspondant A la division par zéro

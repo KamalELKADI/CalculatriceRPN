@@ -9,7 +9,7 @@ public class DivisionParZeroException extends Exception{
      * Initialise une instance de <code>DivisionParZeroException</code>.
      */
 	public DivisionParZeroException() {
-		super("Impossible de divisé par Zéro");
+		super("<------!!!! Impossible de divisé par Zéro !!!!----->");
 	}
 	
 }
