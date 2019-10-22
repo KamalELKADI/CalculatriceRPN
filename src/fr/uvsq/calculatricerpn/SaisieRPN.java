@@ -28,7 +28,7 @@ public class SaisieRPN {
 	public void saisie() throws OperationImpossibleException,BorneSupInfException,DivisionParZeroException{
 		String string = "";
 		boolean arret = false;
-		System.out.println("Veillez Saisir un nombre, opération ou exit pour quitter la calculatrice.");
+		System.out.println("===> Veillez Saisir un nombre, un opération ou exit pour quitter la calculatrice.");
 		while (arret == false) {
 			
 			if (scanner.hasNextDouble()) { // si la saisie est un nombre
@@ -46,10 +46,10 @@ public class SaisieRPN {
 						System.out.println(moteur.listeOperandes());  
 					} 
 				     else throw new OperationImpossibleException(); // sinon si la pile n'a pas au moins deux éléments 		
-				// si la saisie est "exit", on arrÃªte le programme 
+				// si la saisie est "exit", on arréte le programme 
 				else if (string.equals("exit")) {
 					arret = true;
-					System.out.println("END !!!");
+					System.out.println("<--------- END --------->");
 				}
 				
 				
