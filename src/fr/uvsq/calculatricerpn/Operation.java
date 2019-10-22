@@ -3,17 +3,17 @@ import fr.uvsq.calculatricerpn.exceptions.DivisionParZeroException;
 
 
 /*
- * Classe d'énumeration Operation qui permet de définir les differentes opérations des opérandes.
+ * Classe d'enumeration Operation qui permet de definir les differentes operations des operandes.
  */
 public enum Operation {
 	
 	/*
-	 * 3-d :  Constante qui définit l'opération + (ADDITION)
+	 * 3-d :  Constante qui definit l'operation + (ADDITION)
 	 */
 	PLUS('+') { 
 
 		/*
-		 * 3-e : Méthode de l'évaluation pour l'addition
+		 * 3-e : Methode de l'evaluation pour l'addition
 		 */
 		public double eval(double op1, double op2) {
 			return op1 + op2;
@@ -22,12 +22,12 @@ public enum Operation {
 	
 
 	/*
-	 * 3-d :Constante qui définit l'opération - (SOUSTRACTION)
+	 * 3-d :Constante qui definit l'operation - (SOUSTRACTION)
 	 */
 	MOINS('-') {
 		
 		/*
-		 * 3-e : Méthode de l'évaluation pour la soustraction
+		 * 3-e : Methode de l'evaluation pour la soustraction
 		 */
 		public double eval(double op1, double op2) {
 			return op2 - op1;
@@ -36,12 +36,12 @@ public enum Operation {
 	
 	
 	/*
-	 * 3-d :Constante qui définit l'opération * (MULTIPLICATION)
+	 * 3-d :Constante qui definit l'operation * (MULTIPLICATION)
 	 */
 	MULT('*') {
 		
 		/*
-		 * 3-e : Méthode de l'évaluation pour la multiplication
+		 * 3-e : Methode de l'evaluation pour la multiplication
 		 */
 		public double eval(double op1, double op2) {
 			return op1 * op2;
@@ -50,12 +50,12 @@ public enum Operation {
 	
 	
 	/*
-	 * 3-d :Constante qui définit l'opération / (DIVISION)
+	 * 3-d :Constante qui definit l'operation / (DIVISION)
 	 */
 	DIV('/') {
 		
 		/*
-		 * 3-e : Méthode de l'évaluation pour la division
+		 * 3-e : Methode de l'evaluation pour la division
 		 */
 		public double eval(double op1, double op2) throws DivisionParZeroException{
 			if(op1==0) throw new DivisionParZeroException();
@@ -65,21 +65,21 @@ public enum Operation {
 	
 	
 	/*
-	 * 3-a : Attribut Symbole représentant l'opérateur 
+	 * 3-a : Attribut Symbole representant l'operateur 
 	 */
 	private char symbole;
 	
 
 	/*
-	 * 3-b : Constructeur privée de l'énumération de l'opération
+	 * 3-b : Constructeur privee de l'enumeration de l'operation
 	 */
 	private Operation(char symbole) {
 		this.symbole=symbole;
 	}
 	
 	/*
-	 * 3-c : La méthode eval qui retourne retournant le résultat 
-	 * de l’évaluation de l’opération sur deux opérandes.
+	 * 3-c : La methode eval qui retourne retournant le resultat 
+	 * de l'evaluation de l'operation sur deux operandes.
 	 */
 	public abstract double eval(double op1, double op2)throws DivisionParZeroException;
 	
